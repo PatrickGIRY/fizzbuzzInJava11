@@ -2,12 +2,13 @@ package fizzbuzz;
 
 class FizzBuzz {
     String print(int n) {
-        if (n % 5 == 0) {
-            return "Buzz";
-        }
+        String result = "";
         if (n % 3 == 0) {
-            return "Fizz";
+            result += "Fizz";
         }
-        return String.valueOf(n);
+        if (n % 5 == 0) {
+            result += "Buzz";
+        }
+        return result.isEmpty() ? String.valueOf(n) : result;
     }
 }
