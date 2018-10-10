@@ -45,4 +45,12 @@ class FizzBuzzShould {
 
         assertThat(print).isEqualTo("Fizz");
     }
+
+    @Test
+    void print_string_Buzz_when_the_given_integer_is_5() {
+
+        String print = fizzBuzz.print(5);
+
+        assertThat(print).isEqualTo("Buzz");
+    }
 }
