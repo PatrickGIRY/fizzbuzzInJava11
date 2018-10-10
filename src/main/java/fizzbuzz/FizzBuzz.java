@@ -2,6 +2,6 @@ package fizzbuzz;
 
 class FizzBuzz {
     String print(int n) {
-        return "1";
+        return String.valueOf(n);
     }
 }

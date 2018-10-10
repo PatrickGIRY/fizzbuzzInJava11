@@ -14,4 +14,13 @@ class FizzBuzzShould {
 
         assertThat(print).isEqualTo("1");
     }
+
+    @Test
+    void print_string_2_when_the_given_integer_is_2() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String print = fizzBuzz.print(2);
+
+        assertThat(print).isEqualTo("2");
+    }
 }
