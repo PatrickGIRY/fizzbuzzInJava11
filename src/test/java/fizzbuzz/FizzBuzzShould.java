@@ -1,14 +1,21 @@
 package fizzbuzz;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class FizzBuzzShould {
 
+    private FizzBuzz fizzBuzz;
+
+    @BeforeEach
+    void setUp() {
+        fizzBuzz = new FizzBuzz();
+    }
+
     @Test
     void print_string_1_when_the_given_integer_is_1() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         String print = fizzBuzz.print(1);
 
@@ -17,7 +24,6 @@ class FizzBuzzShould {
 
     @Test
     void print_string_2_when_the_given_integer_is_2() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         String print = fizzBuzz.print(2);
 
@@ -26,7 +32,6 @@ class FizzBuzzShould {
 
     @Test
     void print_string_Fizz_when_the_given_integer_is_3() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         String print = fizzBuzz.print(3);
 
