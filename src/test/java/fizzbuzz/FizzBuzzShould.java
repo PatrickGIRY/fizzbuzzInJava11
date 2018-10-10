@@ -23,4 +23,13 @@ class FizzBuzzShould {
 
         assertThat(print).isEqualTo("2");
     }
+
+    @Test
+    void print_string_Fizz_when_the_given_integer_is_3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String print = fizzBuzz.print(3);
+
+        assertThat(print).isEqualTo("Fizz");
+    }
 }
