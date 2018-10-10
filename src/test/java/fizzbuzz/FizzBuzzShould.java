@@ -53,4 +53,12 @@ class FizzBuzzShould {
 
         assertThat(print).isEqualTo("Buzz");
     }
+
+    @Test
+    void print_string_Buzz_when_the_given_integer_is_10() {
+
+        String print = fizzBuzz.print(10);
+
+        assertThat(print).isEqualTo("Buzz");
+    }
 }
